@@ -1,0 +1,238 @@
+Agenda:
+Day1
+
+09:00 to 09:15 : Course Instruction 
+09:15 to 10:15 : Core Java Introduction 
+10:15 to 10:30 : First Program 
+10:30 to 10:45 : Breakout 
+10:45 to 11:00 : Break 
+11:00 to 11:45 : Data types and Variables 
+11:45 to 12:00 : Break 
+12:00 to 12:30 : Operators
+12:30 to 01:00 : Conditional Statements 
+01:00 to 01:15 : Breakout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is Java?
+ *Java is a programming language used to create software applications, including web and mobile apps.
+ *Java is an object-oriented programming language, which means it organizes code into reusable components called objects. 
+ Objects can contain both data(variable) and methods (functions) that operate on that data.
+ *Java programs can run on any device with a Java Virtual Machine (JVM), making them portable.
+ *Code written in Java can be run on different devices without modification.
+ * Java has a large and active community of developers worldwide.
+
+
+
+
+
+
+
+
+
+Java Architecture:
+
+ JVM: Java Virtual Machine
+ JRE: Java Runtime Environment
+ JDK:Java Development Kit
+
+JVM is the virtual machine that executes Java bytecode.
+JRE is the runtime environment that includes the JVM and libraries needed to run Java applications.
+JDK is the development kit that includes the JRE along with development tools for writing, compiling, and running Java programs.
+
+
+
+IDE: Integrated Development Environment
+Definition: An IDE, or Integrated Development Environment, is like a digital workspace where programmers write, edit, and
+ manage their code. It provides tools such as a code editor, debugger, and compiler, all in one place,
+  making it easier for developers to create and maintain their software.
+****************************************************************************************************************************************
+
+
+To Create New Project :
+===================
+Step 1 -  MouseHover on File & Click File
+Step 2 - MouseHover on New --> Click Project.
+Step 3 -  under Maven folder --> Click Maven Project & click Next Button.
+Step 4 - click 'create a simple project' checkbox✅ & click Next Button.
+Step 5 - Enter 'Group id' & 'Artifact id' and click Finish Button
+
+To Create Package :
+================
+Step 1 - Right Click on src/main/Java --> New --> click package
+Step 2 - Enter week1.day1 (Name start's with lowerCase) in Name field  and click Finish Button.
+
+ 
+ To Create Class :
+================
+Step 1 - Right Click on week1.day1 package --> New --> click Class
+Step 2 - Enter HelloTestLeaf  (Name start's with UpperCase) in Name field.  
+Step 3 - click 'public static void main(String[] args)' checkbox ✅
+Step 4 - Then, click Finish Button.
+
+********************************************************************************************************************************************
+  @Package:
+  Packages help in organizing large codebases, improving code readability, and 
+   better maintenance and collaboration.
+
+   *NamingConvertion: package name should start with "lowercase"
+   Ex: week1
+
+ @Class:
+    A class is a blueprint or template for creating objects in object-oriented programming (OOP). 
+    It defines the data (variable) and behaviors (methods) that objects of the class will have.
+
+   *NamingConvertion: package name should start with "uppercase" and "PaselCase"
+   Ex: Browser,BrowserType
+
+  @Variables:
+   A variable is a named storage location in a computer's memory that holds a value. 
+   In programming, variables are used to store and manipulate data.
+
+   *NamingConvertion: package name should start with "lowercase" and CamalCase
+   Ex:classRoom
+
+
+  @DataTypes:
+   In programming, a data type is a classification that specifies which type of value a variable can hold.
+   It defines the operations that can be done on the data, the meaning of the data,
+   and the way values of that type can be stored    
+
+   
+
+
+
+
+
+Operators:
+operators are special symbols that perform specific operations
+ 
+1.Arithmetic operators:
+These operators are used to perform mathematical operations
+such as addition, subtraction, multiplication,and division.
++ (addition)
+- (subtraction)
+* (multiplication)
+/ (division)-Que
+% (modulus or remainder)
+
+2.Assignment operators:
+These operators are used to assign values to variables. 
+= (assignment) a=5 ,comName="TestLeaf"
++= (add and assign) a+=5 =>a=a+5
+-= (subtract and assign)
+*= (multiply and assign)
+/= (divide and assign)
+%= (modulus and assign)
+
+3.Comparison operators:
+These operators are used to compare two value
+and return a boolean value (true or false). 
+== (equal to)
+!= (not equal to)
+> (greater than)
+< (less than)
+>= (greater than or equal to)
+<= (less than or equal to)
+
+4.Logical operators:
+These operators are used to combine two or more boolean expressions
+and return a boolean value.   &&-->AND * 
+&& (logical and)  both condition should passed
+AND----->&&
+1*0=0     T F F
+0*1=0     F T F
+0*0=0     F F F
+1*1=1     T T T
+
+a=5,b=5
+true && false
+(a==b)&&(a>b) =both data=false
+
+(5==5)&&(5<5)---false
+
+|| (logical or) any one condition can pass
+
+true || false
+(a==b)||(a>b) => true
+
+
+addition
+OR------>||
+1+0=1    T F T
+0+1=1    F T T
+1+1=1    T T T
+0+0=0    F F F
+
+(5==5)||(5<5)---True
+
+! (logical not or negation)
+1---0   T F
+
+0---1   F  T
+boolean flag=false;
+!flag
+
+5. unary operator
+Increment operator (++) i=0 1
+Decrement operator (--)
+
+Conditional Statements:
+Conditional statements are used to control the flow of the program based on certain conditions. These statements allow the program to make decisions and execute different blocks of code depending on whether a specified condition evaluates to true or false. The primary conditional statements in Java include:
+1. if Statement:
+Definition: The if statement is used to execute a block of code only if a specified condition is true.
+
+Syntax:
+
+if (condition) {
+    // Code to be executed if the condition is true
+}
+2. if-else Statement:
+Definition: The if-else statement is used to execute one block of code if the condition is true and another block of code if the condition is false.
+
+Syntax:
+
+if (condition) {
+    // Code to be executed if the condition is true
+} else {
+    // Code to be executed if the condition is false
+}
+3. if-else if-else Statement:
+Definition: The if-else if-else statement allows you to check multiple conditions in sequence. It executes the first block of code whose condition is true.
+
+Syntax:
+
+if (condition1) {
+    // Code to be executed if condition1 is true
+} else if (condition2) {
+    // Code to be executed if condition2 is true
+} else {
+    // Code to be executed if none of the conditions is true
+}
+
+If_Else:
+
+int mark =60
+
+if(60>60)=>(60>61)-false
+
+if(mark>60){
+  System.out.println("pass");
+}
+
+else{
+  System.out.println("fail");
+}
