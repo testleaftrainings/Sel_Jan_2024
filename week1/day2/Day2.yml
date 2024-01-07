@@ -1,0 +1,139 @@
+Agenda:
+Day2
+08:45 to 09:00 : Recap
+09:00 to 10:00 : Control Statements(For Loop)  & Jump Statements 
+10:00 to 10:20 : BreakOut
+10:20 to 10:35 : Break
+10:35 to 11:40 : Method and Object
+11:40 to 12:00 : BreakOut
+12:00 to 12:10 : Break 
+12:10 to 01:00 : Arrays
+01:00 to 01:15 : Breakout
+
+Looping Statements:
+
+for Statement: The for loop in Java is used to iterate over a range of values or to 
+repeat a block of code a certain number of times. It consists of three parts: 
+initialization, condition, and iteration expression. The loop continues as long as the condition is true.
+
+Example:
+
+for(initialization;condition;iteration){
+
+}
+                5<5
+for (int i = 0; i < 5; i++) {
+    // Code to be repeated
+}
+
+output: 0 1 2 3 4
+
+
+
+
+
+
+Jump Statements:
+
+break Statement: The break statement is used to exit a loop prematurely. When encountered inside a loop,
+ it immediately terminates the loop, and the control is transferred to the statement following the loop.
+
+ for (int i = 0; i < 10; i++) {
+  //0,1,2,3,4,5
+    if (i == 5) {
+        break; // Exits the loop when i is 5
+    }
+    // Code inside the loop
+}
+
+
+continue Statement: The continue statement is used to skip the rest of the code inside a loop for 
+the current iteration and move on to the next iteration.
+
+for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+        continue; // Skips the rest of the code for i=5 and continues with the next iteration
+    }
+    // Code inside the loop
+}
+//0,1,2,3,4,6,7,8,9
+
+
+Method:
+
+*A method in Java is a collection of statements that perform a specific task. Methods are defined 
+within classes and are used to organize code, make it reusable, and promote modular programming.
+
+*A method typically consists of a method signature, which includes the method name, return type,
+ and parameter list, and a method body, which contains the code to be executed when the method is called.
+
+Return Type: Specifies the type of data the method will return, or "void" if it doesn't return anything.
+ Parameters: Input values passed to the method for processing.
+
+
+public  static void main(String[] args){
+
+}
+Accessmodifier -public
+static - common reference
+void-return type
+main-method name
+String[] agrs- input arguments
+
+
+Normal method:
+
+Accesmodifier returntype methodname(input arguments)
+
+Example:
+public class MyClass {
+    // Method definition -> UPI
+    public void printMessage() {
+        System.out.println("Hello, World!");
+    }
+
+    // Method with parameters and return type -> Cash 
+    public int addNumbers(int a, int b) {
+        return a + b;
+    }
+}
+
+
+
+ Object:
+
+An object in Java is an instance of a class. A class is a blueprint or a template that defines the 
+structure and behavior of objects. Objects are created based on these class definitions.
+variables ,methods
+
+Objects have attributes (fields or properties) and behaviors (methods). The attributes represent
+ the state of the object, and the methods define the actions or operations that the object can perform.
+
+syntax:
+step 1:
+ClassName objectName=new ClassName();
+
+step 2:
+
+objectName.methodName();
+
+
+
+ Arrays:
+ An array in Java is a data structure that allows you to store multiple values of
+ the same data type under a single variable name. Arrays provide a way to efficiently
+ manage and access a collection of elements of the same type. Each element in an 
+ array is identified by an index, starting from 0 for the first element.
+
+ Example: int[] myArray = {1, 2, 3, 4, 5};
+
+array will be work on index value -start from '0'
+
+cha[] data ={'a','d','g','c','e','s'}
+starting index -0
+ending index -5
+
+ store all 55 names String={"a","b","c"}
+
+ 
+ String[] name={"             "}
