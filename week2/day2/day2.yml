@@ -1,0 +1,130 @@
+ Agenda:Week2.day2 
+
+08:45 to 09:00 : Recap 
+09:00 to 10:15 : Xpath & Basic Xpath 
+10:15 to 10:35 : Breakout 
+10:35 to 10:50 : Break
+10:50 to 11:30 : Selenium Wait & Webdriver methods
+11:30 to 12:00 : Advance Xpath 
+12:00 to 12:15 : Breakout 
+12:15 to 12:25 : Break
+12:25 to 01:00 : Advance Xpath
+01:00 to 01:15 : Live Quiz 
+
+
+
+Xpath-XML Path
+
+
+Absolute XPath: It starts from the root (html) and traverses down to the desired element, 
+detailing every single element in the hierarchy. The path starts with a single forward slash /, 
+indicating the root. For example: /html/body/div[2]/div[2]/div/form/p[1]/input. `.
+ ex: /html/body/div[2]/div[2]/div/form/p/input
+
+
+
+
+
+
+Relative XPath: It starts from anywhere within the document and typically focuses on 
+identifying elements based on attributes, indexes, or specific tags, not necessarily 
+detailing the entire path from the root. It starts with a double forward slash //,
+ indicating the search can begin anywhere. For example: //input[@id=‘username’].
+
+
+
+Relative Xpath:
+
+a.Basic xpath
+Attribute based xPath: Syntax: //tagname[@attributename='attributeValue'] 
+Example:  //input[@id='password'] //input[@id='twotabsearchtextbox']
+//input[@class='decorativeSubmit']
+//input[@id='inputValEnter']
+
+Text based xPath: Syntax: //tagname[text()='textvalue'] 
+Example:  //a[text()='Leads'] //span[text()='Hello, sign in']
+
+Partial Attribute based xpath: Syntax: //tagname[contains(@attributename,'partialattributevalue')] 
+Example: //input[contains(@class,'decorative')] //input[contains(@id,'twotab')]
+ //input[contains(@id,'search')]
+
+Partial Text based xpath:
+Syntax: //tagname[contains(text(),'partialtextvalue')]
+  Example: //a[contains(text(),'SFA')]
+          //span[contains(text(),'Hello')]
+          //a[contains(text(),'Smartphones')]
+
+Index based xpath:
+ Syntax: (//tagname[@attributename='attributeValue'])[2]
+(//tagname[text()='textvalue'])[3] Example: (//a[contains(text(),'Lead')])[3] 
+
+(//tagname[@attr='attr value'])[4]
+you should not  go beyond index as 5
+(//span[contains(text(),'Fashion')])[2]
+
+Advance Xpath:
+
+Parent to Child
+
+Basic Xpath/tagname of child
+Ex: //p[@class='top']/input
+    //div[@class='col-xs-14 search-box-wrapper']/input
+    //a[@class='nav-a nav-hasArrow']/span
+
+GrandParent to GrandChild:
+Basic Xpath for Gp//tagname of Gc
+ex:    (//form[@id='login']//input)[2]
+   //form[@id='login']//input[@id='password']
+
+Child to Parent:
+
+Basic Xpath Child/parent::tagname of parent
+//input[@id='inputValEnter']/parent::div
+//input[@id='email']/parent::div
+
+GrandChild to GrandParent :
+Basic xpath for GC/ancestor::tagname of GP
+//input[@class='decorativeSubmit']/ancestor::form
+
+
+1:https://www.snapdeal.com/
+   cart -xpath
+   footwear- xpath
+
+ 2.https://www.amazon.in/
+ Best sellers  
+
+
+ Elder sibling to youngerSibling:
+
+ Basic xpath Elder sibling/following-sibling::tagname Ys
+ //label[text()='Username']/following-sibling::input
+
+ Younger sibling to Elder sibling:
+ Basic xpath Younger sibling/preceding-sibling::tagname of Es
+ //input[@id='username']/preceding-sibling::label
+
+ Elder cousin to younger cousin:
+ Basic xpat Elder Cousin/following::tagname of Yc
+ //input[@id='Login']/following::input
+
+ Younger cousin to Elder Cousin:
+ Basic xpath Younger cousin /preceding::tagname of EC
+ //input[@id='rememberUn']/preceding::input[@id='Login']
+
+
+ Wait:
+  Java wait -Thread.sleep(2000); it will wait till time given to be completed
+
+  Selenium wait :
+  1.Implicit wait
+  2.Explicit wait
+
+  Implicit wait :
+  10mins
+
+  at 7mins
+
+  its common for both findElement and findElements
+
+  
