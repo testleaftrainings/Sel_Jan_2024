@@ -1,0 +1,142 @@
+
+ Agenda:Week4.day1 
+
+08:45  to 09:00 :   Live Quiz 
+09:00 to 10:00  :   Alert 
+10:00 to 10:20  :  Breakout
+10: 20to 10:30  :  Break
+10:30 to 11:15  :  Frame 
+11:15 to 11:30  :  Breakout
+11:30 to 11:40  :  Break 
+11:40 to 12:10  :  Set
+12:10 to 12:15  :  Breakout
+12:15 to 01:00  :  Window Handling 
+
+
+Target Locator:
+Alert
+Frame
+WindowHandling
+
+
+
+Alert:
+* Javascript -based
+types of alert:
+
+Modal alert:
+(we cannot inspected alert)
+1.simple alert - message with one button(ok or yes)
+2.comfirmatiom alert -message with 2 buttons(ok/cancle or yes/no)
+3.prompt alert - one input field with 2 buttons(ok/cancle or yes/no)
+
+
+syntax:
+
+driver.switchTo().alert();
+
+Alert Interface Actions:
+
+1. accept()-clicks on Ok button
+
+2. dismiss()- clicks on Cancel button
+
+3. getText() -Retrives the text from alert box
+
+4. sendKeys() - give input in alert box 
+
+Non-Modal alert:
+(we can able inspected alert)
+Sweet alert
+
+
+
+
+Frame:
+
+
+
+What is a Frame?
+A frame is a part of a web page or browser window which displays content independent of its container, 
+with its own scroll and navigation.
+It's essentially a document within a document, commonly used to embed a separate document within a web page.
+
+
+Why Handle Frames?
+Frames must be handled because Selenium WebDriver operates on a single document context.
+If a web page contains frames, WebDriver cannot automatically access the content of these frames.
+To interact with elements within a frame, WebDriver must switch to it explicitly.
+
+How to Identify a Frame?
+Frames can be identified by right-clicking on the element and selecting "View Frame Source" for 
+direct URLs or by searching for the frame or iframe tags within the HTML DOM.
+
+Structure of Frame
+When you inspect a web page, you'll notice that the frame or iframe tags define the frame structure.
+ Each frame will have its own HTML document, which can be navigated and manipulated independently 
+ of the main page.
+
+How to Handle Frames?
+To handle frames, use the switchTo() method provided by WebDriver.
+
+By index: driver.switchTo().frame(int index)
+By Name or ID: driver.switchTo().frame(String nameOrId)
+By Reference: driver.switchTo().frame(WebElement frameElement)
+
+
+Once you're done with the frame and need to switch back to the main content, use:
+driver.switchTo().defaultContent()
+
+
+And to switch to the immediate parent frame, use:
+driver.switchTo().parentFrame()
+
+
+
+
+How to Handle Nested Frames
+Nested frames are handled by switching into each frame sequentially. After interacting with the deepest frame, you need to switch back to the parent frame or main document to continue the automation tasks.
+For handling nested frames, you would use a sequence of switchTo().frame() calls to drill down into the nested structure, and use switchTo().parentFrame() or switchTo().defaultContent() to navigate back up.
+Exception:
+NoSuchFrameException in Selenium is thrown when the WebDriver attempts to switch to a non-existent frame. - This can happen if the frame has been removed or if it never existed in the DOM at the point of the attempt. - It indicates that the specified frame is not present in the current page context, and the automation script needs to ensure that the frame name, ID, or reference being used to switch to is correct and available.
+This exception is a signal to check the frame's existence, its correct identification, or if the page has fully loaded before attempting to switch frames.
+
+
+
+
+SET:
+{2,5,4,6,2,7,8,1,6}- 7(5)
+
+{2,5,4,6,7,8,1} -7(4)
+get(5)-8
+
+
+Collection: Set
+Definition:
+The Set interface in Java is a part of the Java Collections Framework.
+It represents a collection that cannot contain duplicate elements.
+Properties of Set:
+No Duplicate Elements: Ensures that each element in the Set is unique.
+Unordered Collection: Except for some specific implementations like LinkedHashSet or TreeSet, the Set does not guarantee the order of its elements.
+Implementation Classes:
+HashSet:
+Maintains a random order
+LinkedHashSet:
+Maintains insertion order of elements.
+TreeSet:
+Maintains sorted order
+Why There is No get() in Set:
+The Set interface does not have a get() method, and this is by design, due to the following reasons:
+
+Uniqueness Over Indexing: The Set is designed to ensure uniqueness rather than maintain an index-based system like List. Elements in a Set are not accessed by an index.
+Undefined Ordering: In most implementations of Set, the order of elements is not fixed. Therefore, retrieving an element by a specific index or position does not make sense.
+
+
+
+
+
+
+
+
+
+
