@@ -1,0 +1,52 @@
+
+ Agenda:Week4.day2 
+ 
+09:00 to 10:00  :  Window Handling 
+10:00 to 10:20  :  Breakout
+10:20 to 10:30  :  Break
+10:30 to 11:45  :  Action class 
+11:45 to 12:00  :  Breakout
+12:00 to 12:10  :  Break 
+12:10 to 12:50  :  Webtable 
+12:50 to 01:10  :  Breakout
+
+
+Window Handling:
+
+To handle multiple window
+switch my control to new window
+both tab or window same 
+
+window unique id hold
+
+
+
+
+
+WebTable:
+
+<table>- data name or information
+<tbody>- table body
+<tr> -table row data
+<td> - table column data
+<th> - table header
+
+
+<table>
+    <thead>
+      <tr>  </tr>
+      <tr>   </tr>
+      </thead>
+
+    <tbody>
+
+    <tr>
+      <td>
+      <td>  
+    </tr>
+    <tr>
+     <td>
+     </tr>
+   </tboby>
+
+</table>       
